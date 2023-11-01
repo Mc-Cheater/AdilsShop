@@ -1,0 +1,10 @@
+app-navbar{
+display: flex;
+justify-content: space-around;
+flex: 1 1 auto ;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: large;
+font-weight: bold;
+flex-wrap: wrap;
+
+}

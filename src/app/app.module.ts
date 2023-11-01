@@ -11,6 +11,8 @@ import { NavbarComponent } from './tool-bar/navbar/navbar.component';
 import { IconsComponent } from './tool-bar/icons/icons.component';
 import { NavbarLinkComponent } from './tool-bar/navbar/navbar-link/navbar-link.component';
 import { IconComponent } from './tool-bar/icons/icon/icon.component';
+import { MainContentComponent } from './content/main-content/main-content.component';
+import { SideContentComponent } from './content/side-content/side-content.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { IconComponent } from './tool-bar/icons/icon/icon.component';
     NavbarComponent,
     IconsComponent,
     NavbarLinkComponent,
-    IconComponent
+    IconComponent,
+    MainContentComponent,
+    SideContentComponent
   ],
   imports: [
     BrowserModule,
