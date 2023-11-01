@@ -1,0 +1,16 @@
+
+
+.productCard{
+    width:200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.productCard img{
+    object-fit: scale-down;
+    width: 100%;
+    max-height: 200px;
+}

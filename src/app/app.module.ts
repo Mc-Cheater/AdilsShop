@@ -13,6 +13,8 @@ import { NavbarLinkComponent } from './tool-bar/navbar/navbar-link/navbar-link.c
 import { IconComponent } from './tool-bar/icons/icon/icon.component';
 import { MainContentComponent } from './content/main-content/main-content.component';
 import { SideContentComponent } from './content/side-content/side-content.component';
+import { ProductsListComponent } from './content/main-content/products-list/products-list.component';
+import { ProductCardComponent } from './content/main-content/products-list/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SideContentComponent } from './content/side-content/side-content.compon
     NavbarLinkComponent,
     IconComponent,
     MainContentComponent,
-    SideContentComponent
+    SideContentComponent,
+    ProductsListComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

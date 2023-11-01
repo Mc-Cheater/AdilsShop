@@ -8,3 +8,15 @@ font-weight: bold;
 flex-wrap: wrap;
 
 }
+.toolBarContainer{
+    box-shadow: 0px 2px 5px rgb(183, 121, 245);
+    display: flex;
+    
+    flex-wrap: nowrap;
+    width: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
