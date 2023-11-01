@@ -6,13 +6,23 @@ import { AppComponent } from './app.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './tool-bar/header/header.component';
+import { NavbarComponent } from './tool-bar/navbar/navbar.component';
+import { IconsComponent } from './tool-bar/icons/icons.component';
+import { NavbarLinkComponent } from './tool-bar/navbar/navbar-link/navbar-link.component';
+import { IconComponent } from './tool-bar/icons/icon/icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolBarComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    NavbarComponent,
+    IconsComponent,
+    NavbarLinkComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
