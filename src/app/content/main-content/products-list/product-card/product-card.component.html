@@ -1,9 +1,10 @@
 <div class="productCard" [id]="'productCard'+produit.id">
 
-    <h4> {{produit.title}}</h4>
+    <h4> {{produit.title |titlecase}}</h4>
     <img [src]="produit.image">
-    <p>{{produit.description}}</p>
-    <button [id]="'adderButton'+produit.id">Add To Cart</button>
+    <p>{{produit.description |slice:0:sliceEnd |lowercase |capitalize}} <span (click)="onclick()">{{placeholder |titlecase}}</span></p>
+    <p> Price : {{produit.price  |number:'1.2-2'| currency:'CAD':'symbol':'1.2-2'}}</p>
+    <button [id]="'adderButton'+produit.id" >Add To Cart</button>
 </div>
 
 

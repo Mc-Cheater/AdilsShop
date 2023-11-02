@@ -5,12 +5,22 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-
-    
+    row-gap: 15px;
+    margin-left: 25px;
 }
 
 .productCard img{
-    object-fit: scale-down;
+    object-fit: contain;
     width: 100%;
     max-height: 200px;
+}
+
+span{
+    text-decoration: underline;
+    color: brown;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }

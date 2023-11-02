@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from 'src/app/product';
 import { ProductFetcherService } from 'src/app/product-fetcher.service';
 
@@ -8,11 +8,21 @@ import { ProductFetcherService } from 'src/app/product-fetcher.service';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent {
+onclick() {
+
+  this.sliceEnd=(this.sliceEnd===this.produit.description.length)?40:this.produit.description.length;
   
-  produit:Product;
+  this.placeholder=(this.sliceEnd===this.produit.description.length)?"masquer":"... suite";
+
+}
+  @Input()
+  produit!:Product;
+  sliceEnd=40;
+  placeholder="...suite";
+
 
   constructor(private fetcher:ProductFetcherService){
-    this.produit=fetcher.getProductById(1)
+   // this.produit=fetcher.getProductById(1)
   }
 
 }

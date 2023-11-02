@@ -15,6 +15,7 @@ import { MainContentComponent } from './content/main-content/main-content.compon
 import { SideContentComponent } from './content/side-content/side-content.component';
 import { ProductsListComponent } from './content/main-content/products-list/products-list.component';
 import { ProductCardComponent } from './content/main-content/products-list/product-card/product-card.component';
+import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductCardComponent } from './content/main-content/products-list/produ
     MainContentComponent,
     SideContentComponent,
     ProductsListComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
