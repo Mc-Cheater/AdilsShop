@@ -3,4 +3,6 @@ app-products-list{
     flex-wrap: wrap;
     row-gap: 35px;
     column-gap: 50px;
+    min-width: 75vw;
+
 }

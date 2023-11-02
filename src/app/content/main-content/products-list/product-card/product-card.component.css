@@ -1,12 +1,15 @@
 
 
 .productCard{
-    width:200px;
+    width:400px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
     margin-left: 25px;
+    border-radius: 25px;
+    border: 2px rgb(207, 205, 205) solid;
+    padding: 25px;
 }
 
 .productCard img{

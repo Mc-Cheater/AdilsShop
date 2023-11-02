@@ -16,6 +16,9 @@ import { SideContentComponent } from './content/side-content/side-content.compon
 import { ProductsListComponent } from './content/main-content/products-list/products-list.component';
 import { ProductCardComponent } from './content/main-content/products-list/product-card/product-card.component';
 import { CapitalizePipe } from './capitalize.pipe';
+import { LoginFormComponent } from './content/side-content/login-form/login-form.component';
+import { CartBannerComponent } from './content/side-content/cart-banner/cart-banner.component';
+import { MiniProductCardComponent } from './content/side-content/cart-banner/mini-product-card/mini-product-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { CapitalizePipe } from './capitalize.pipe';
     SideContentComponent,
     ProductsListComponent,
     ProductCardComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    LoginFormComponent,
+    CartBannerComponent,
+    MiniProductCardComponent
   ],
   imports: [
     BrowserModule,

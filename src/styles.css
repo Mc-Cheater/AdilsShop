@@ -7,6 +7,15 @@
 }
 
 app-content{
-    display: grid;
-    grid-template-columns: 7fr 3fr;
+    display:flex;
+
+}
+
+app-main-content{
+    flex: 7 7 auto;
+}
+
+app-side-content{
+
+    flex: 3 3 auto;
 }
