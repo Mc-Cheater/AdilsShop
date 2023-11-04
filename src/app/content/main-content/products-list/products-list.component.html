@@ -1,3 +1,11 @@
 
 
-<app-product-card *ngFor="let product of products" [produit]="product"></app-product-card>
+<ul><li *ngFor="let pageLink of pagesKeys;index as i"> 
+    <span (click)="showPage(i)">{{pageLink}}</span>
+</li>
+<li>
+<input type="number" id="pagination" [(ngModel)]="productPerPage">
+</li>
+</ul>
+
+<app-product-card *ngFor="let product of currentProductsShown " [produit]="product"></app-product-card>
