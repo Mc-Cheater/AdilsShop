@@ -1,0 +1,13 @@
+<form #loginForm="ngForm" (ngSubmit)="clickLogin()" novalidate >
+    <label for="userName" class="labels">Login :</label>
+    <input type="text" id="userName" class="inputs" [(ngModel)]="userName" name="userName" >
+    <label for="password" class="labels">Password :</label>
+    <input type="password" id="password" class="inputs" [(ngModel)]="password" name="password">
+    
+    <span id="btnContainer"><button type="submit" > Login</button></span>
+    <p> Not registered yet? please <span><a href="#" style="display: inline;"> Subscribe </a></span> ! </p>
+<div>{{loginForm.value |json}}</div>
+
+</form>
+
+

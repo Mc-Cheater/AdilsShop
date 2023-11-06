@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+form{
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 50px;
+    width: max-content;
+   background-color: beige;
+   background-color: hsl(0, 0%, 95%);
+}   
+
+
+*{
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+
+#btnContainer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;    
+}
+
+input{
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+a{
+    display: inline;
+    clear: both;
+}
+
+input.invalid{
+
+    border: 1px solid red;
+
+}
+.invalidMessage{
+    font-size: x-small;
+    color: red;
+}
+button{
+    background-color: #EFDECD;
+    border: 2px solid #FFEEBD;
+    padding: 5px;
+    font-size: large;
+    font-weight: 600;
+    color: #7c7c7f;
+    width: 100%;
+}
+
+
+button:active{
+    background-color: #7c7c7f;
+    box-shadow: inset 0px 1px 1px 1px rgb(0, 0, 0);
+    color: #EFDECD;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 800;
+}
+
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

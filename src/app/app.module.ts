@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
@@ -19,9 +19,12 @@ import { CapitalizePipe } from './capitalize.pipe';
 import { LoginFormComponent } from './content/side-content/login-form/login-form.component';
 import { CartBannerComponent } from './content/side-content/cart-banner/cart-banner.component';
 import { MiniProductCardComponent } from './content/side-content/cart-banner/mini-product-card/mini-product-card.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { JsonPipe } from '@angular/common';
+import { AuthenticationFormComponent } from './authentication-form/authentication-form.component';
 @NgModule({
   declarations: [
+    
     AppComponent,
     ToolBarComponent,
     ContentComponent,
@@ -38,11 +41,13 @@ import { MiniProductCardComponent } from './content/side-content/cart-banner/min
     CapitalizePipe,
     LoginFormComponent,
     CartBannerComponent,
-    MiniProductCardComponent
+    MiniProductCardComponent,
+    AuthenticationFormComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
