@@ -2,24 +2,24 @@
     <fieldset>
         <legend>Filter by Title or Description</legend>
         <label for="title">Title:</label>
-        <input type="text" id="title" name="title"><br>
+        <input type="text" id="title" name="title" [(ngModel)]="title"><br>
         <label for="description">Description:</label>
-        <input type="text" id="description" name="description"><br>
+        <input type="text" id="description" name="description" [(ngModel)]="description"><br>
     </fieldset>
     <fieldset>
         <legend>Price Range</legend>
         <label for="minPrice">Minimum Price:</label>
-        <input type="range" id="minPrice" name="minPrice" min="0" max="100" step="1">
-        <output for="minPrice">0</output><br>
+        <input type="range" id="minPrice" name="minPrice" [min]="minPrice" [max]="maxPrice" step="30" [(ngModel)]="currentMinPrice">
+        <output for="minPrice">{{currentMinPrice}}</output><br>
         <label for="maxPrice">Maximum Price:</label>
-        <input type="range" id="maxPrice" name="maxPrice" min="0" max="100" step="1">
-        <output for="maxPrice">100</output><br>
+        <input type="range" id="maxPrice" name="maxPrice" [min]="minPrice" [max]="maxPrice" step="30" [(ngModel)]="currentMaxPrice">
+        <output for="maxPrice">{{currentMaxPrice}}</output><br>
     </fieldset>
     <fieldset>
         <legend>Minimum Rating</legend>
         <label for="minRating">Minimum Rating:</label>
-        <input type="range" id="minRating" name="minRating" min="0" max="5" step="0.5">
-        <output for="minRating">0</output><br>
+        <input type="range" id="minRating" name="minRating" min="0" max="5" step="0.5" [(ngModel)]="minRate">
+        <output for="minRating">{{minRate}}</output><br>
     </fieldset>
     <fieldset>
         <legend>Category</legend>
@@ -31,6 +31,6 @@
         </select><br>
     </fieldset>
     <div class="submitContainer">
-    <button type="submit"> Filter your products</button>
+    <button type="submit" (ngSumbit)="applyFilters()"> Filter your products</button>
 </div>
 </form>
