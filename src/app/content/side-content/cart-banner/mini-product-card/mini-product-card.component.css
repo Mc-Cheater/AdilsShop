@@ -1,3 +1,24 @@
 img{
     width: 75px;
+    float: left;
+    margin-left: -50px;
+}
+
+input{
+    width: 35px;
+    display: inline;
+}
+
+h6{
+    clear: both;
+    margin-top:65px;
+}
+
+
+button{
+    padding: 5px;
+    margin: 1px;
+}
+input{
+    padding: 5px;
 }

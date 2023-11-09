@@ -2,3 +2,7 @@
 <img [src]="produit.image">
 <p>Pricing: {{produit.price}}</p>
 <button (click)="removeFromCart()"> Remove</button>
+<form>
+<input type="tel" placeholder="quantity" [(ngModel)]="quantity">
+<button type="submit" (click)="setQuantity()"> confirm</button>
+</form>

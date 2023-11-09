@@ -1,8 +1,24 @@
 div{
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 8fr 2fr;
 }
 
 div.unhoveredside{
     grid-template-columns: 15fr 1fr;
+
+}
+
+app-side-gallery{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.gridToFlex app-products-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.gridToFlex app-products-card{
+    width: 400px;
+    
 }

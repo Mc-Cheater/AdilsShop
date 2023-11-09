@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CartMemoryService } from 'src/app/cart-memory.service';
 import { HandleClicksService } from 'src/app/handle-clicks.service';
 import { EventKeys } from 'src/app/ibroadcast-event';
 import { Product } from 'src/app/product';
@@ -11,8 +12,8 @@ import { Product } from 'src/app/product';
 export class MiniProductCardComponent {
   @Input()
   public produit!:Product;
-
-  constructor(private handler:HandleClicksService){}
+  quantity:number|undefined=this.servi.pquantity.get(this.produit);
+  constructor(private handler:HandleClicksService,private servi:CartMemoryService){}
   removeFromCart()
 {
 
@@ -21,5 +22,8 @@ export class MiniProductCardComponent {
 
 }
 
+setQuantity(){
+  this.servi.pquantity.set(this.produit,this.quantity??1);
+}
 
 }
