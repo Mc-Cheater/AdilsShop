@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{font-family:'Roboto' ,'Courier New', Courier, monospace;}
+form{
+ background-color: #FFEEFF;
+ color: #666666;
+}
+ output {
+     display: inline-block;
+     min-width: 30px;
+     text-align: center;
+ }
+
+ input{
+     accent-color: #3333FF;
+     width:30%;
+ }
+ input[type="text"]{
+    width: 50%;
+ }
+ label{
+     display: block;
+ }
+
+ button[type="submit"]:host{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ button{
+     background-color: #6666FF;
+     padding: 5px 15px;
+     border-radius: 3px;
+     color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin-top: 10px;
+     border-radius: 13px 13px 13px 13px;
+     }
+ button:hover{
+     transform: scale(1.2,1.1);
+     transition: 0.15s ease-in;
+     border-radius: 13px 13px 13px 13px;
+ }
+ button:active{
+     background-color: #b2b2fa;
+     color: blue;
+     box-shadow: inset 0px 0px 1.5px 1.5px #333366;
+     border-radius: 13px 13px 13px 13px;
+ }
+ fieldset *{
+     margin-left: 35%;
+ }
+ fieldset output{
+     margin-left: 10px;
+ }
+ .submitContainer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ fieldset{border-radius: 15px;}
+ fieldset:focus-within{border-color: #3333FF;
+                 
+                 
+ 
+ }
+ fieldset:focus-within legend{color: #3333FF;
+                 
+
+ 
+             }
+ input[type="text"]{
+     padding-left: 10px;
+     border-radius: 15px;
+ }
+
+ select{
+     border-radius: 15px;
+ }
+ select{
+     font-weight: 1200;
+ }

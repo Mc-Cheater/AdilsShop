@@ -1,0 +1,36 @@
+<form>
+    <fieldset>
+        <legend>Filter by Title or Description</legend>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Price Range</legend>
+        <label for="minPrice">Minimum Price:</label>
+        <input type="range" id="minPrice" name="minPrice" min="0" max="100" step="1">
+        <output for="minPrice">0</output><br>
+        <label for="maxPrice">Maximum Price:</label>
+        <input type="range" id="maxPrice" name="maxPrice" min="0" max="100" step="1">
+        <output for="maxPrice">100</output><br>
+    </fieldset>
+    <fieldset>
+        <legend>Minimum Rating</legend>
+        <label for="minRating">Minimum Rating:</label>
+        <input type="range" id="minRating" name="minRating" min="0" max="5" step="0.5">
+        <output for="minRating">0</output><br>
+    </fieldset>
+    <fieldset>
+        <legend>Category</legend>
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <option value="category3">Category 3</option>
+        </select><br>
+    </fieldset>
+    <div class="submitContainer">
+    <button type="submit"> Filter your products</button>
+</div>
+</form>

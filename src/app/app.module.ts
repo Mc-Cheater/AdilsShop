@@ -22,6 +22,9 @@ import { MiniProductCardComponent } from './content/side-content/cart-banner/min
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
 import { AuthenticationFormComponent } from './authentication-form/authentication-form.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { MainGalleryComponent } from './gallery/main-gallery/main-gallery.component';
+import { SideGalleryComponent } from './gallery/side-gallery/side-gallery.component';
 @NgModule({
   declarations: [
     
@@ -43,6 +46,9 @@ import { AuthenticationFormComponent } from './authentication-form/authenticatio
     CartBannerComponent,
     MiniProductCardComponent,
     AuthenticationFormComponent,
+    GalleryComponent,
+    MainGalleryComponent,
+    SideGalleryComponent,
     
   ],
   imports: [
