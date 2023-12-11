@@ -1,12 +1,29 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.development';
+import { FiltersObservableService } from './filters-observable.service';
+import { EventKeys } from './ibroadcast-event';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductFetcherService {
+  filters:any=null;
+ httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json'
+     })
+  };
+  
+  getFilteredProducts():Observable<Product[]> {
+    if (this.filters===null) return this.getAllProducts();
+    else
+    return this.http.post<Product[]>(this.url+"product/",this.filters,this.httpOptions);
+  }
 
-  url:string="db.json see documentation of json server later";
+  url:string=environment.apiurl;
 
   products=[
     {
@@ -372,7 +389,10 @@ export class ProductFetcherService {
       rating: { rate: 3.6, count: 145 }
     }
   ];
-  constructor() { }
+  constructor(private http:HttpClient,private obs:FiltersObservableService) { 
+    this.obs.on(EventKeys.ALL).subscribe((data)=>this.filters=data);
+  
+  }
 
   getProductById(id:number):Product{
     return {
@@ -386,6 +406,7 @@ export class ProductFetcherService {
     };
   }
 
+
   getMinMaxPrice():[number,number]{
     let prices:Array<number>=[]
     this.products.forEach((p:any)=>prices.push(p.price));
@@ -395,5 +416,7 @@ export class ProductFetcherService {
     return [min,max];
   
   }
-
+  getAllProducts():Observable<Product[]>{
+    return this.http.get<Product[]>(this.url+"product/")
+  }
 }

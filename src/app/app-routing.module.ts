@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'home', component: ContentComponent },
   {path:'login',component:AuthenticationFormComponent},
   { path: 'gallery', component: GalleryComponent },
-  { path: 'cart', component: FooterComponent },
- { path: 'paiment', component:FooterComponent },
+  { path: 'cart', component: AuthenticationFormComponent },
+ { path: 'paiment', component:AuthenticationFormComponent },
  { path: 'about', component:FooterComponent },
  {path:'login',component:AuthenticationFormComponent},
 
